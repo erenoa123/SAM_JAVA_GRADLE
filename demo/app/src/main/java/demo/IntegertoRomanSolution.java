@@ -1,90 +1,63 @@
 package demo;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class IntegertoRomanSolution {
     public String intToRoman(int num) {
         
-        String keta1 = "";
+        Map<Integer,String> map1keta = mapKeta("I","V","X");
 
-        if(num%10 > 0){
-            if(num%10 == 4){
-                keta1 = "IV";
-            }else if(num%10 == 5){
-                keta1 = "V";
-            }else if(num%10 == 9){
-                keta1 = "IX";
-            }else {
-                int i = 0;
-                while(i < num%10){
-                    if(i == 0 && num%10 > 5){
-                        keta1 = "V";
-                        i = i + 5;
-                    }else{
-                        keta1 = keta1 + "I";
-                        i++;
-                    }
-                }
-            }
+        String keta1 = map1keta.get(num%10);
+        if(keta1 == null){
+            keta1 = "";
         }
-
-        String keta10 = "";
         num = num /10;
-        if(num%10 > 0){
-            if(num%10 == 4){
-                keta10 = "XL";
-            }else if(num%10 == 5){
-                keta10 = "L";
-            }else if(num%10 == 9){
-                keta10 = "XC";
-            }else {
-                int i = 0;
-                while(i < num%10){
-                    if(i == 0 && num%10 > 5){
-                        keta10 = "L";
-                        i = i + 5;
-                    }else{
-                        keta10 = keta10 + "X";
-                        i++;
-                    }
-                }
-            }
-        }
 
-        String keta100 = "";
+        Map<Integer,String> map10keta = mapKeta("X","L","C");
+
+        String keta10 = map10keta.get(num%10);
+        if(keta10 == null){
+            keta10 = "";
+        }
         num = num /10;
-        if(num%10 > 0){
-            if(num%10 == 4){
-                keta100 = "CD";
-            }else if(num%10 == 5){
-                keta100 = "D";
-            }else if(num%10 == 9){
-                keta100 = "CM";
-            }else {
-                int i = 0;
-                while(i < num%10){
-                    if(i == 0 && num%10 > 5){
-                        keta100 = "D";
-                        i = i + 5;
-                    }else{
-                        keta100 = keta100 + "C";
-                        i++;
-                    }
-                }
-            }
-        }
 
-        String keta1000 = "";
+        Map<Integer,String> map100keta = mapKeta("C","D","M");
+
+        String keta100 = map100keta.get(num%10);
+        if(keta100 == null){
+            keta100 = "";
+        }
         num = num /10;
-        if(num%10 > 0){
-            int i = 0;
-            while(i < num%10){
-                keta1000 = keta1000 + "M";
-                i++;
-            }
-        
-        }
 
+        Map<Integer,String> map1000keta = new HashMap<>();
+        map1000keta.put(1,"M");
+        map1000keta.put(2,"MM");
+        map1000keta.put(3,"MMM");
+
+        String keta1000 = map1000keta.get(num%10);
+        if(keta1000 == null){
+            keta1000 = "";
+        }
+  
         return keta1000+keta100+keta10+keta1;
         
-
     }
+
+    private Map<Integer,String> mapKeta(String one, String five, String ten){
+
+        Map<Integer,String> mapketa = new HashMap<>();
+        mapketa.put(1,one);
+        mapketa.put(2,one+one);
+        mapketa.put(3,one+one+one);
+        mapketa.put(4,one+five);
+        mapketa.put(5,five);
+        mapketa.put(6,five+one);
+        mapketa.put(7,five+one+one);
+        mapketa.put(8,five+one+one+one);
+        mapketa.put(9,one+ten);
+
+        return mapketa;
+    }
+
 }
