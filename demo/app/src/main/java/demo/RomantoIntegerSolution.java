@@ -10,54 +10,19 @@ class RomantoIntegerSolution {
         String ch = "";
         for(String cS : arrS){
             
+            if(cnt+1 < s.length() && handan(cS,arrS[cnt+1])){
+                cnt++;
+                ch = cS;
+                flg = true;
+                continue;
+            }
+
             if(flg){
+                ch += cS;
                 flg = false;
             }else{
                 ch = cS;
             }
-
-            if(cnt+1 < s.length() && ch.equals("I")){
-                if(arrS[cnt+1].equals("V")){
-                    ch += "V";
-                    cnt++;
-                    flg = true;
-                    continue;
-                }else if(arrS[cnt+1].equals("X")){
-                    ch += "X";
-                    cnt++;
-                    flg = true;
-                    continue;
-                }
-            }
-
-            if(cnt+1  < s.length() && ch.equals("X")){
-                if(arrS[cnt+1].equals("L")){
-                    ch += "L";
-                    cnt++;
-                    flg = true;
-                    continue;
-                }else if(arrS[cnt+1].equals("C")){
-                    ch += "C";
-                    cnt++;
-                    flg = true;
-                    continue;
-                }
-            }
-
-            if(cnt+1  < s.length() && ch.equals("C")){
-                if(arrS[cnt+1].equals("D")){
-                    ch += "D";
-                    cnt++;
-                    flg = true;
-                    continue;
-                }else if(arrS[cnt+1].equals("M")){
-                    ch += "M";
-                    cnt++;
-                    flg = true;
-                    continue;
-                }
-            }
-
 
             switch(ch){
                 case "I" : ans += 1; break;
@@ -79,7 +44,33 @@ class RomantoIntegerSolution {
             cnt++;
         }
 
-
         return ans;
+    }
+
+    private boolean handan(String ch, String arrS){
+        if(ch.equals("I")){
+            if(arrS.equals("V")){
+                return  true;
+            }else if(arrS.equals("X")){
+                return  true;
+            }
+        }
+
+        if(ch.equals("X")){
+            if(arrS.equals("L")){
+                return  true;
+            }else if(arrS.equals("C")){
+                return  true;
+            }
+        }
+
+        if(ch.equals("C")){
+            if(arrS.equals("D")){
+                return  true;
+            }else if(arrS.equals("M")){
+                return  true;
+            }
+        }
+        return false;
     }
 }
