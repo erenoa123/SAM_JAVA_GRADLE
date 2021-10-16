@@ -16,8 +16,9 @@ public class ThreeSumSolutionTest {
         int[] testdata1 = {-1,-1,2};
         int[] testdata2 = {-1,0,1};
 
-        expect.add(makeTestDataList(testdata2));
         expect.add(makeTestDataList(testdata1));
+        expect.add(makeTestDataList(testdata2));
+
         
 
         assertEquals(target.threeSum(num),expect);
