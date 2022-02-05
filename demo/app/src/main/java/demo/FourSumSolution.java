@@ -29,6 +29,10 @@ public class FourSumSolution {
 
         // 返却値用のリスト
         List<List<Integer>> ansList = new ArrayList<>();
+        // 前回の値を保持する変数
+        int dictnum = 0;
+        // 初回実行判定用フラグ
+        boolean flg = true;
 
         // 配列のサイズ分実行
         while (listnums.size() > 0) {
@@ -37,16 +41,26 @@ public class FourSumSolution {
             // 先頭の値をリストから削除
             listnums.remove(0);
 
-            // 3sum呼び出し時の引数用のリスト
-            List<Integer> tempnums = new ArrayList<>(listnums);
-            // 重複確認用のリスト
-            List<List<Integer>> templist = threeSumExpantion(tempnums, num, target);
+            // 初回実行時または前回と異なる値(num)の時に実行
+            if (flg || dictnum != num) {
+                // 3sum呼び出し時の引数用のリスト
+                List<Integer> tempnums = new ArrayList<>(listnums);
+                // 重複確認用のリスト
+                List<List<Integer>> templist = threeSumExpantion(tempnums, num, target);
 
-            // 結果の重複確認
-            for (List<Integer> intList : templist) {
-                if (!ansList.contains(intList)) {
-                    ansList.add(intList);
+                // 結果の重複確認
+                for (List<Integer> intList : templist) {
+                    if (!ansList.contains(intList)) {
+                        ansList.add(intList);
+                    }
                 }
+
+                // 初回実行フラグを変更
+                flg = false;
+                // 前回の値を更新
+                dictnum = num;
+            }else{
+                // 何もなし
             }
 
         }
