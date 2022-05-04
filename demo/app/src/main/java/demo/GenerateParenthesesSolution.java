@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class GenerateParentheses {
+public class GenerateParenthesesSolution {
     public List<String> generateParenthesis(int n) {
 
         List<StringBuilder> list = new ArrayList<>();
