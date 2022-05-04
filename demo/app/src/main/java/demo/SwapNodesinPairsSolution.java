@@ -3,7 +3,7 @@ package demo;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SwapNodesinPairs {
+public class SwapNodesinPairsSolution {
     public ListNode swapPairs(ListNode head) {
 
         // 作業用のListNodeを作成
