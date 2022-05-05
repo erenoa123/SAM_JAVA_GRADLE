@@ -2,7 +2,7 @@
 
 
 [1. Two Sum](demo/app/src/main/java/demo/TwoSumSolution.java)  
-[2. Add Two Numbers](demo/app/src/main/java/demo/AddTwoNumbersSolution.java) 　
+[2. Add Two Numbers](demo/app/src/main/java/demo/AddTwoNumbersSolution.java)  
 [3. Longest Substring Without Repeating Characters](demo/app/src/main/java/demo/LongestSubstringWithoutRepeatingCharactersSolution.java)   
 [4. Median of Two Sorted Arrays](demo/app/src/main/java/demo/MedianofTwoSortedArraysSolution.java)  
 [5. Longest Palindromic Substring](demo/app/src/main/java/demo/LongestPalindromicSubstringSolution.java)  
