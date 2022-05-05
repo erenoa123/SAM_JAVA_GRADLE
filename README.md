@@ -1,4 +1,22 @@
-# SAM_JAVA_GRADLE
-LeetCodeのソース管理用リポジトリ
+# LeetCodeのソース管理用リポジトリ
 
-[ContainerWithMostWater](/demo/app/src/main/java/demo/ContainerWithMostWaterSolution.java)
+[11. Container With Most Water](demo/app/src/main/java/demo/ContainerWithMostWaterSolution.java)  
+[12. Integer to Roman](demo/app/src/main/java/demo/IntegertoRomanSolution.java)  
+[13. Roman to Integer](demo/app/src/main/java/demo/RomantoIntegerSolution.java)  
+[14. Longest Common Prefix](demo/app/src/main/java/demo/LongestCommonPrefixSolution.java)  
+[15. 3Sum](demo/app/src/main/java/demo/ThreeSumSolution.java)  
+[16. 3Sum Closest](demo/app/src/main/java/demo/ThreeSumClosestSolution.java)  
+[17. Letter Combinations of a Phone Number](demo/app/src/main/java/demo/LetterCombinationsofaPhoneNumber.java)  
+[18. 4Sum](demo/app/src/main/java/demo/FourSumSolution.java)  
+[19. Remove Nth Node From End of List](demo/app/src/main/java/demo/RemoveNthNodeFromEndofListSolution.java)  
+[20. Valid Parentheses](demo/app/src/main/java/demo/ValidParenthesesSolution.java)  
+[21. Merge Two Sorted Lists](demo/app/src/main/java/demo/MergeTwoSortedListsSolution.java)  
+[22. Generate Parentheses](demo/app/src/main/java/demo/GenerateParenthesesSolution.java)  
+[23. Merge k Sorted Lists](demo/app/src/main/java/demo/MergekSortedListsSolution.java)  
+[24. Swap Nodes in Pairs](demo/app/src/main/java/demo/SwapNodesinPairsSolution.java)  
+[25. Reverse Nodes in k-Group](demo/app/src/main/java/demo/ReverseNodesinkGroupSolution.java)  
+[26. Remove Duplicates from Sorted Array](demo/app/src/main/java/demo/RemoveDuplicatesfromSortedArraySolution.java)  
+[27. Remove Element](demo/app/src/main/java/demo/RemoveElementSolution.java)  
+[28. Implement strStr()](demo/app/src/main/java/demo/ImplementstrStr.java)  
+[29. Divide Two Integers](demo/app/src/main/java/demo/DivideTwoIntegersSolution.java)  
+[30. Substring with Concatenation of All Words](demo/app/src/main/java/demo/SubstringwithConcatenationofAllWordsSolution.java)  
