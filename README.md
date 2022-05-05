@@ -1,5 +1,16 @@
 # LeetCodeのソース管理用リポジトリ
 
+
+[1. Two Sum](demo/app/src/main/java/demo/TwoSumSolution.java)  
+[2. Add Two Numbers](demo/app/src/main/java/demo/AddTwoNumbersSolution.java) 
+[3. Longest Substring Without Repeating Characters](demo/app/src/main/java/demo/LongestSubstringWithoutRepeatingCharactersSolution.java)   
+[4. Median of Two Sorted Arrays](demo/app/src/main/java/demo/MedianofTwoSortedArraysSolution.java)  
+[5. Longest Palindromic Substring](demo/app/src/main/java/demo/LongestPalindromicSubstringSolution.java)  
+[6. Zigzag Conversion](demo/app/src/main/java/demo/ZigzagConversionSolution.java)  
+[7. Reverse Integer](demo/app/src/main/java/demo/ReverseIntegerSolution.java)  
+[8. String to Integer (atoi)](demo/app/src/main/java/demo/StringtoIntegeratoiSolution.java)  
+[9. Palindrome Number](demo/app/src/main/java/demo/PalindromeNumberSolution.java)  
+[10. Regular Expression Matching](demo/app/src/main/java/demo/RegularExpressionMatchingSolution.java)  
 [11. Container With Most Water](demo/app/src/main/java/demo/ContainerWithMostWaterSolution.java)  
 [12. Integer to Roman](demo/app/src/main/java/demo/IntegertoRomanSolution.java)  
 [13. Roman to Integer](demo/app/src/main/java/demo/RomantoIntegerSolution.java)  
