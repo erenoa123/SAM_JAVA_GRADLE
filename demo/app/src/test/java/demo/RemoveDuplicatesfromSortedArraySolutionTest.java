@@ -13,4 +13,19 @@ public class RemoveDuplicatesfromSortedArraySolutionTest {
             System.out.println("n : "+ n);
         }
     }
+
+    @Test public void test2(){
+        int n = -1;
+        Integer strn = Integer.valueOf(n);
+        String[] split = strn.toString().split("");
+        System.out.println("n : "+ n);
+        System.out.println("String n : "+ split[0]);
+
+        String s = split[0] + split[1];
+        System.out.println("String s : "+ Integer.valueOf(s));
+
+        int ret = Integer.valueOf(s);
+        System.out.println("ret : "+ ret);
+
+    }
 }
