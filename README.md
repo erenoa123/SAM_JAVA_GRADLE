@@ -1,2 +1,4 @@
 # SAM_JAVA_GRADLE
-java（Gradle）のサンプル用プロジェクト
+LeetCodeのソース管理用リポジトリ
+
+[ContainerWithMostWater](/demo\app\src\main\java\demo\ContainerWithMostWaterSolution.java)
