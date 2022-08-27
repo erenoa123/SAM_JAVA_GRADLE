@@ -31,3 +31,4 @@
 [28. Implement strStr()](demo/app/src/main/java/demo/ImplementstrStr.java)  
 [29. Divide Two Integers](demo/app/src/main/java/demo/DivideTwoIntegersSolution.java)  
 [30. Substring with Concatenation of All Words](demo/app/src/main/java/demo/SubstringwithConcatenationofAllWordsSolution.java)  
+[31. nextPermutation](demo/app/src/main/java/demo/31.next-permutation.java) 
